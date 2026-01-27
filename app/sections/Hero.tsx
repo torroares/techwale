@@ -1,12 +1,13 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="py-20 md:py-28">
       <div className="grid gap-12 md:grid-cols-2 items-center">
-        
-        {/* LEFT SIDE */}
+        {/* LEFT SIDE – TEXT */}
         <div>
           <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-            Next-Generation iGaming & 
+            Next-Generation iGaming &{" "}
             <span className="block text-sky-400">
               Sports Betting Platform Solutions.
             </span>
@@ -34,18 +35,15 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
-        <div className="rounded-3xl border border-slate-800 bg-slate-900/50 p-6 shadow-xl">
-          <p className="text-xs font-medium text-sky-400 uppercase tracking-wide mb-3">
-            Platform Snapshot
-          </p>
-          <ul className="space-y-3 text-sm text-slate-200">
-            <li>• Real-time betting engine</li>
-            <li>• Player account management (PAM)</li>
-            <li>• Risk & trading tools</li>
-            <li>• Payment integrations</li>
-            <li>• API-first modular architecture</li>
-          </ul>
+        {/* RIGHT SIDE – IMAGE */}
+        <div className="relative w-full h-72 md:h-96">
+          <Image
+            src="/images/hero-techwale1.png"
+            alt="Techwale iGaming platform illustration"
+            fill
+            className="object-cover rounded-3xl border border-slate-800 shadow-2xl"
+            priority
+          />
         </div>
       </div>
     </section>
