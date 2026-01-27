@@ -26,8 +26,8 @@ export default function Footer() {
         {/* Column 3 */}
         <div>
           <h3 className="text-slate-200 font-semibold mb-2">Contact</h3>
-          <p>Email: info@techwale.com</p>
-          <p>Location: London, UK</p>
+          <p>Email: info@techwale.dev</p>
+          <p>Location: Voufavento 2, Ypsonas, 4164 Limassol, Cyprus</p>
         </div>
       </div>
 
