@@ -25,7 +25,6 @@ header {
   width: 100%;
   background-color: #0a0a0a; /* dunkler Hintergrund wie im Design */
   z-index: 9999;
-  padding: 1rem 1.5rem;
   transition: all 0.3s ease-in-out;
 }
 
