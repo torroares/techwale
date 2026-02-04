@@ -17,3 +17,70 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ————————————— Sticky Header Basis ————————————— */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #0a0a0a; /* dunkler Hintergrund wie im Design */
+  z-index: 9999;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Logo */
+header .logo img {
+  height: 45px;
+}
+
+/* Desktop Menü */
+.main-nav ul li a {
+  color: #fff; /* weiße Texte */
+  font-size: 1rem;
+}
+
+/* ————————— Mobile Menü Overlay ————————— */
+
+/* Container */
+.main-nav {
+  background: #0a0a0a; /* dunkler Hintergrund für Mobile Menu */
+  color: #fff;         /* weiße Schrift */
+  position: fixed;
+  top: 0;
+  right: -100%;        /* geschlossen */
+  height: 100vh;
+  width: 80%;
+  max-width: 300px;
+  padding-top: 4rem;   /* Platz für Header */
+  transition: right 0.3s ease-in-out;
+  z-index: 9998;
+}
+
+/* geöffnet */
+.main-nav.open {
+  right: 0;
+}
+
+/* Menü-Punkte */
+.main-nav ul li a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #fff;         /* sicher weiß */
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Trennlinie optional */
+.main-nav ul li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Hamburger Button */
+.mobile-menu-toggle {
+  color: #fff; /* sichtbar auf dunklem Hintergrund */
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
